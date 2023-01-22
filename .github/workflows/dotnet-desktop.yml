@@ -26,7 +26,7 @@ jobs:
       run: nuget restore RadioPanel.sln
       
     - name: Build and Publish Web App
-      run: msbuild RadioPanel.sln /p:Configuration=Release /p:PublishProfile=FolderProfile
+      run: msbuild RadioPanel.sln /p:Configuration=Release
       
     - name: Upload Artifact
       uses: actions/upload-artifact@v1.0.0
