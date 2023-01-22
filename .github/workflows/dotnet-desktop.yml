@@ -1,0 +1,35 @@
+name: Build Application
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: windows-latest  # For a list of available runner types, refer to
+                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
+    - name: Setup MSBuild Path
+      uses: microsoft/setup-msbuild@v1.0.2
+      
+    - name: Setup NuGet
+      uses: nuget/setup-nuget@v1
+      
+    - name: Restore NuGet Packages
+      run: nuget restore RadioPanel.sln
+      
+    - name: Build and Publish Web App
+      run: msbuild RadioPanel.sln /p:Configuration=Release
+      
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: published_application
+        path: bin/Release/Publish
