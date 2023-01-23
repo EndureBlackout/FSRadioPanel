@@ -50,13 +50,35 @@
             this.label1 = new System.Windows.Forms.Label();
             this.infoLabel = new System.Windows.Forms.Label();
             this.butRecon = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.navLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.navSwap = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.navActivceFreq = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.navStbyFreq = new System.Windows.Forms.TextBox();
+            this.navInputFreq = new System.Windows.Forms.TextBox();
+            this.navClear = new System.Windows.Forms.Button();
+            this.navDel = new System.Windows.Forms.Button();
+            this.navOk = new System.Windows.Forms.Button();
+            this.navZero = new System.Windows.Forms.Button();
+            this.navNine = new System.Windows.Forms.Button();
+            this.navEight = new System.Windows.Forms.Button();
+            this.navSeven = new System.Windows.Forms.Button();
+            this.navSix = new System.Windows.Forms.Button();
+            this.navFive = new System.Windows.Forms.Button();
+            this.navFour = new System.Windows.Forms.Button();
+            this.navThree = new System.Windows.Forms.Button();
+            this.navTwo = new System.Windows.Forms.Button();
+            this.navOne = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // stbyFreq
             // 
             this.stbyFreq.BackColor = System.Drawing.SystemColors.Window;
             this.stbyFreq.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.stbyFreq.Location = new System.Drawing.Point(227, 51);
+            this.stbyFreq.Location = new System.Drawing.Point(227, 97);
             this.stbyFreq.MaxLength = 5;
             this.stbyFreq.Name = "stbyFreq";
             this.stbyFreq.ReadOnly = true;
@@ -69,7 +91,7 @@
             this.stbyLabel.BackColor = System.Drawing.Color.Black;
             this.stbyLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.stbyLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.stbyLabel.Location = new System.Drawing.Point(227, 20);
+            this.stbyLabel.Location = new System.Drawing.Point(227, 66);
             this.stbyLabel.Name = "stbyLabel";
             this.stbyLabel.Size = new System.Drawing.Size(65, 28);
             this.stbyLabel.TabIndex = 1;
@@ -78,7 +100,7 @@
             // activeFreq
             // 
             this.activeFreq.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.activeFreq.Location = new System.Drawing.Point(12, 51);
+            this.activeFreq.Location = new System.Drawing.Point(12, 97);
             this.activeFreq.MaxLength = 5;
             this.activeFreq.Name = "activeFreq";
             this.activeFreq.ReadOnly = true;
@@ -91,7 +113,7 @@
             this.activeLabel.BackColor = System.Drawing.Color.Black;
             this.activeLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.activeLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.activeLabel.Location = new System.Drawing.Point(12, 20);
+            this.activeLabel.Location = new System.Drawing.Point(12, 66);
             this.activeLabel.Name = "activeLabel";
             this.activeLabel.Size = new System.Drawing.Size(77, 28);
             this.activeLabel.TabIndex = 3;
@@ -100,7 +122,7 @@
             // butSwap
             // 
             this.butSwap.ForeColor = System.Drawing.Color.Black;
-            this.butSwap.Location = new System.Drawing.Point(154, 51);
+            this.butSwap.Location = new System.Drawing.Point(154, 97);
             this.butSwap.Name = "butSwap";
             this.butSwap.Size = new System.Drawing.Size(67, 34);
             this.butSwap.TabIndex = 4;
@@ -262,14 +284,14 @@
             this.infoLabel.AutoSize = true;
             this.infoLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.infoLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.infoLabel.Location = new System.Drawing.Point(0, 367);
+            this.infoLabel.Location = new System.Drawing.Point(5, 672);
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(0, 15);
             this.infoLabel.TabIndex = 20;
             // 
             // butRecon
             // 
-            this.butRecon.Location = new System.Drawing.Point(298, 356);
+            this.butRecon.Location = new System.Drawing.Point(297, 668);
             this.butRecon.Name = "butRecon";
             this.butRecon.Size = new System.Drawing.Size(75, 23);
             this.butRecon.TabIndex = 21;
@@ -278,12 +300,261 @@
             this.butRecon.Visible = false;
             this.butRecon.Click += new System.EventHandler(this.butRecon_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(5, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 37);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "COM1:";
+            // 
+            // navLabel
+            // 
+            this.navLabel.AutoSize = true;
+            this.navLabel.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.navLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.navLabel.Location = new System.Drawing.Point(12, 341);
+            this.navLabel.Name = "navLabel";
+            this.navLabel.Size = new System.Drawing.Size(97, 37);
+            this.navLabel.TabIndex = 23;
+            this.navLabel.Text = "NAV1:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.Window;
+            this.label3.Location = new System.Drawing.Point(155, 452);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 28);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Input:";
+            // 
+            // navSwap
+            // 
+            this.navSwap.ForeColor = System.Drawing.Color.Black;
+            this.navSwap.Location = new System.Drawing.Point(154, 418);
+            this.navSwap.Name = "navSwap";
+            this.navSwap.Size = new System.Drawing.Size(67, 34);
+            this.navSwap.TabIndex = 28;
+            this.navSwap.Text = "↔";
+            this.navSwap.UseVisualStyleBackColor = true;
+            this.navSwap.Click += new System.EventHandler(this.navSwap_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.SystemColors.Window;
+            this.label4.Location = new System.Drawing.Point(12, 387);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 28);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Active:";
+            // 
+            // navActivceFreq
+            // 
+            this.navActivceFreq.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.navActivceFreq.Location = new System.Drawing.Point(12, 418);
+            this.navActivceFreq.MaxLength = 5;
+            this.navActivceFreq.Name = "navActivceFreq";
+            this.navActivceFreq.ReadOnly = true;
+            this.navActivceFreq.Size = new System.Drawing.Size(136, 34);
+            this.navActivceFreq.TabIndex = 26;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.SystemColors.Window;
+            this.label5.Location = new System.Drawing.Point(227, 387);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 28);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "STBY:";
+            // 
+            // navStbyFreq
+            // 
+            this.navStbyFreq.BackColor = System.Drawing.SystemColors.Window;
+            this.navStbyFreq.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.navStbyFreq.Location = new System.Drawing.Point(227, 418);
+            this.navStbyFreq.MaxLength = 5;
+            this.navStbyFreq.Name = "navStbyFreq";
+            this.navStbyFreq.ReadOnly = true;
+            this.navStbyFreq.Size = new System.Drawing.Size(135, 34);
+            this.navStbyFreq.TabIndex = 24;
+            // 
+            // navInputFreq
+            // 
+            this.navInputFreq.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.navInputFreq.Location = new System.Drawing.Point(93, 483);
+            this.navInputFreq.Name = "navInputFreq";
+            this.navInputFreq.Size = new System.Drawing.Size(176, 34);
+            this.navInputFreq.TabIndex = 43;
+            // 
+            // navClear
+            // 
+            this.navClear.Location = new System.Drawing.Point(146, 639);
+            this.navClear.Name = "navClear";
+            this.navClear.Size = new System.Drawing.Size(75, 23);
+            this.navClear.TabIndex = 42;
+            this.navClear.Text = "Clear";
+            this.navClear.UseVisualStyleBackColor = true;
+            this.navClear.Click += new System.EventHandler(this.navClear_Click);
+            // 
+            // navDel
+            // 
+            this.navDel.Location = new System.Drawing.Point(65, 610);
+            this.navDel.Name = "navDel";
+            this.navDel.Size = new System.Drawing.Size(75, 23);
+            this.navDel.TabIndex = 41;
+            this.navDel.Text = "DEL";
+            this.navDel.UseVisualStyleBackColor = true;
+            this.navDel.Click += new System.EventHandler(this.navDel_Click);
+            // 
+            // navOk
+            // 
+            this.navOk.Location = new System.Drawing.Point(227, 610);
+            this.navOk.Name = "navOk";
+            this.navOk.Size = new System.Drawing.Size(75, 23);
+            this.navOk.TabIndex = 40;
+            this.navOk.Text = "OK ✔";
+            this.navOk.UseVisualStyleBackColor = true;
+            this.navOk.Click += new System.EventHandler(this.navOk_Click);
+            // 
+            // navZero
+            // 
+            this.navZero.Location = new System.Drawing.Point(146, 610);
+            this.navZero.Name = "navZero";
+            this.navZero.Size = new System.Drawing.Size(75, 23);
+            this.navZero.TabIndex = 39;
+            this.navZero.Text = "0";
+            this.navZero.UseVisualStyleBackColor = true;
+            this.navZero.Click += new System.EventHandler(this.navZero_Click);
+            // 
+            // navNine
+            // 
+            this.navNine.Location = new System.Drawing.Point(227, 581);
+            this.navNine.Name = "navNine";
+            this.navNine.Size = new System.Drawing.Size(75, 23);
+            this.navNine.TabIndex = 38;
+            this.navNine.Text = "9";
+            this.navNine.UseVisualStyleBackColor = true;
+            this.navNine.Click += new System.EventHandler(this.navNine_Click);
+            // 
+            // navEight
+            // 
+            this.navEight.Location = new System.Drawing.Point(146, 581);
+            this.navEight.Name = "navEight";
+            this.navEight.Size = new System.Drawing.Size(75, 23);
+            this.navEight.TabIndex = 37;
+            this.navEight.Text = "8";
+            this.navEight.UseVisualStyleBackColor = true;
+            this.navEight.Click += new System.EventHandler(this.navEight_Click);
+            // 
+            // navSeven
+            // 
+            this.navSeven.Location = new System.Drawing.Point(65, 581);
+            this.navSeven.Name = "navSeven";
+            this.navSeven.Size = new System.Drawing.Size(75, 23);
+            this.navSeven.TabIndex = 36;
+            this.navSeven.Text = "7";
+            this.navSeven.UseVisualStyleBackColor = true;
+            this.navSeven.Click += new System.EventHandler(this.navSeven_Click);
+            // 
+            // navSix
+            // 
+            this.navSix.Location = new System.Drawing.Point(227, 552);
+            this.navSix.Name = "navSix";
+            this.navSix.Size = new System.Drawing.Size(75, 23);
+            this.navSix.TabIndex = 35;
+            this.navSix.Text = "6";
+            this.navSix.UseVisualStyleBackColor = true;
+            this.navSix.Click += new System.EventHandler(this.navSix_Click);
+            // 
+            // navFive
+            // 
+            this.navFive.Location = new System.Drawing.Point(146, 552);
+            this.navFive.Name = "navFive";
+            this.navFive.Size = new System.Drawing.Size(75, 23);
+            this.navFive.TabIndex = 34;
+            this.navFive.Text = "5";
+            this.navFive.UseVisualStyleBackColor = true;
+            this.navFive.Click += new System.EventHandler(this.navFive_Click);
+            // 
+            // navFour
+            // 
+            this.navFour.Location = new System.Drawing.Point(65, 552);
+            this.navFour.Name = "navFour";
+            this.navFour.Size = new System.Drawing.Size(75, 23);
+            this.navFour.TabIndex = 33;
+            this.navFour.Text = "4";
+            this.navFour.UseVisualStyleBackColor = true;
+            this.navFour.Click += new System.EventHandler(this.navFour_Click);
+            // 
+            // navThree
+            // 
+            this.navThree.Location = new System.Drawing.Point(227, 523);
+            this.navThree.Name = "navThree";
+            this.navThree.Size = new System.Drawing.Size(75, 23);
+            this.navThree.TabIndex = 32;
+            this.navThree.Text = "3";
+            this.navThree.UseVisualStyleBackColor = true;
+            this.navThree.Click += new System.EventHandler(this.navThree_Click);
+            // 
+            // navTwo
+            // 
+            this.navTwo.Location = new System.Drawing.Point(146, 523);
+            this.navTwo.Name = "navTwo";
+            this.navTwo.Size = new System.Drawing.Size(75, 23);
+            this.navTwo.TabIndex = 31;
+            this.navTwo.Text = "2";
+            this.navTwo.UseVisualStyleBackColor = true;
+            this.navTwo.Click += new System.EventHandler(this.navTwo_Click);
+            // 
+            // navOne
+            // 
+            this.navOne.Location = new System.Drawing.Point(65, 523);
+            this.navOne.Name = "navOne";
+            this.navOne.Size = new System.Drawing.Size(75, 23);
+            this.navOne.TabIndex = 30;
+            this.navOne.Text = "1";
+            this.navOne.UseVisualStyleBackColor = true;
+            this.navOne.Click += new System.EventHandler(this.navOne_Click);
+            // 
             // ComPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(374, 381);
+            this.ClientSize = new System.Drawing.Size(372, 691);
+            this.Controls.Add(this.navInputFreq);
+            this.Controls.Add(this.navClear);
+            this.Controls.Add(this.navDel);
+            this.Controls.Add(this.navOk);
+            this.Controls.Add(this.navZero);
+            this.Controls.Add(this.navNine);
+            this.Controls.Add(this.navEight);
+            this.Controls.Add(this.navSeven);
+            this.Controls.Add(this.navSix);
+            this.Controls.Add(this.navFive);
+            this.Controls.Add(this.navFour);
+            this.Controls.Add(this.navThree);
+            this.Controls.Add(this.navTwo);
+            this.Controls.Add(this.navOne);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.navSwap);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.navActivceFreq);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.navStbyFreq);
+            this.Controls.Add(this.navLabel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.butRecon);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.label1);
@@ -338,6 +609,28 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label infoLabel;
         private System.Windows.Forms.Button butRecon;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label navLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button navSwap;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox navActivceFreq;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox navStbyFreq;
+        private System.Windows.Forms.TextBox navInputFreq;
+        private System.Windows.Forms.Button navClear;
+        private System.Windows.Forms.Button navDel;
+        private System.Windows.Forms.Button navOk;
+        private System.Windows.Forms.Button navZero;
+        private System.Windows.Forms.Button navNine;
+        private System.Windows.Forms.Button navEight;
+        private System.Windows.Forms.Button navSeven;
+        private System.Windows.Forms.Button navSix;
+        private System.Windows.Forms.Button navFive;
+        private System.Windows.Forms.Button navFour;
+        private System.Windows.Forms.Button navThree;
+        private System.Windows.Forms.Button navTwo;
+        private System.Windows.Forms.Button navOne;
     }
 }
 

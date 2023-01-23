@@ -26,6 +26,7 @@ namespace RadioPanel
             {
                 fsConnect.Connect("RadioManagerTest", 0);
                 radioManager = new RadioManager(fsConnect);
+                radioManager.Update();
             } catch (Exception e)
             {
                 infoLabel.Text = "Could not connect to simulator.";
@@ -96,9 +97,6 @@ namespace RadioPanel
             {
                 stbyFreq.Text = radioManager.Com1StandbyFrequency.ToString();
             }
-
-            //radioManager.SetCom1ActiveFrequency(Double.Parse(activeFreq.Text));
-            //radioManager.SetCom1StandbyFrequency(Double.Parse(stbyFreq.Text));
         }
 
         private void butDel_Click(object sender, EventArgs e)
@@ -137,6 +135,94 @@ namespace RadioPanel
             {
                 infoLabel.Text = "Could not connect to simulator.";
                 butRecon.Visible = true;
+            }
+        }
+
+        private void navOne_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "1" : ".1";
+        }
+
+        private void navTwo_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "2" : ".2";
+        }
+
+        private void navThree_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "3" : ".3";
+        }
+
+        private void navFour_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "4" : ".4";
+        }
+
+        private void navFive_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "5" : ".5";
+        }
+
+        private void navSix_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "6" : ".6";
+        }
+
+        private void navSeven_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "7" : ".7";
+        }
+
+        private void navEight_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "8" : ".8";
+        }
+
+        private void navNine_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "9" : ".9";
+        }
+
+        private void navZero_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Text += navInputFreq.Text.Length != 3 ? "0" : ".0";
+        }
+
+        private void navDel_Click(object sender, EventArgs e)
+        {
+            var startFreq = navInputFreq.Text;
+            navInputFreq.Text = string.Empty;
+            for (int i = 0; i < startFreq.Length - 1; i++)
+            {
+                navInputFreq.Text += startFreq[i].ToString();
+            }
+        }
+
+        private void navOk_Click(object sender, EventArgs e)
+        {
+            navStbyFreq.Text = navInputFreq.Text;
+            navInputFreq.Clear();
+            radioManager.SetNav1StandbyFrequency(Double.Parse(navStbyFreq.Text));
+            radioManager.Update();
+        }
+
+        private void navClear_Click(object sender, EventArgs e)
+        {
+            navInputFreq.Clear();
+        }
+
+        private void navSwap_Click(object sender, EventArgs e)
+        {
+            var activeText = navActivceFreq.Text;
+            navActivceFreq.Text = navStbyFreq.Text;
+            navStbyFreq.Text = activeText;
+
+            radioManager.Nav1Swap();
+            radioManager.Update();
+
+            if (navStbyFreq.Text == string.Empty)
+            {
+                navStbyFreq.Text = radioManager.Nav1StandbyFrequency.ToString();
             }
         }
     }
