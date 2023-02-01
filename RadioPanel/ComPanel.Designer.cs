@@ -72,6 +72,23 @@
             this.navThree = new System.Windows.Forms.Button();
             this.navTwo = new System.Windows.Forms.Button();
             this.navOne = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtSquawkIn = new System.Windows.Forms.TextBox();
+            this.squClear = new System.Windows.Forms.Button();
+            this.squDel = new System.Windows.Forms.Button();
+            this.squOk = new System.Windows.Forms.Button();
+            this.squZero = new System.Windows.Forms.Button();
+            this.squNine = new System.Windows.Forms.Button();
+            this.squEight = new System.Windows.Forms.Button();
+            this.squSeven = new System.Windows.Forms.Button();
+            this.squSix = new System.Windows.Forms.Button();
+            this.squFive = new System.Windows.Forms.Button();
+            this.squFour = new System.Windows.Forms.Button();
+            this.squThree = new System.Windows.Forms.Button();
+            this.squTwo = new System.Windows.Forms.Button();
+            this.squOne = new System.Windows.Forms.Button();
+            this.txtSquawk = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // stbyFreq
@@ -527,12 +544,199 @@
             this.navOne.UseVisualStyleBackColor = true;
             this.navOne.Click += new System.EventHandler(this.navOne_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.SystemColors.Window;
+            this.label7.Location = new System.Drawing.Point(599, 271);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 28);
+            this.label7.TabIndex = 63;
+            this.label7.Text = "Input:";
+            // 
+            // txtSquawkIn
+            // 
+            this.txtSquawkIn.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.txtSquawkIn.Location = new System.Drawing.Point(541, 302);
+            this.txtSquawkIn.Name = "txtSquawkIn";
+            this.txtSquawkIn.Size = new System.Drawing.Size(176, 34);
+            this.txtSquawkIn.TabIndex = 62;
+            // 
+            // squClear
+            // 
+            this.squClear.Location = new System.Drawing.Point(594, 458);
+            this.squClear.Name = "squClear";
+            this.squClear.Size = new System.Drawing.Size(75, 23);
+            this.squClear.TabIndex = 61;
+            this.squClear.Text = "Clear";
+            this.squClear.UseVisualStyleBackColor = true;
+            this.squClear.Click += new System.EventHandler(this.squClear_Click);
+            // 
+            // squDel
+            // 
+            this.squDel.Location = new System.Drawing.Point(513, 429);
+            this.squDel.Name = "squDel";
+            this.squDel.Size = new System.Drawing.Size(75, 23);
+            this.squDel.TabIndex = 60;
+            this.squDel.Text = "DEL";
+            this.squDel.UseVisualStyleBackColor = true;
+            this.squDel.Click += new System.EventHandler(this.squDel_Click);
+            // 
+            // squOk
+            // 
+            this.squOk.Location = new System.Drawing.Point(675, 429);
+            this.squOk.Name = "squOk";
+            this.squOk.Size = new System.Drawing.Size(75, 23);
+            this.squOk.TabIndex = 59;
+            this.squOk.Text = "OK ✔";
+            this.squOk.UseVisualStyleBackColor = true;
+            this.squOk.Click += new System.EventHandler(this.squOk_Click);
+            // 
+            // squZero
+            // 
+            this.squZero.Location = new System.Drawing.Point(594, 429);
+            this.squZero.Name = "squZero";
+            this.squZero.Size = new System.Drawing.Size(75, 23);
+            this.squZero.TabIndex = 58;
+            this.squZero.Text = "0";
+            this.squZero.UseVisualStyleBackColor = true;
+            this.squZero.Click += new System.EventHandler(this.squZero_Click);
+            // 
+            // squNine
+            // 
+            this.squNine.Location = new System.Drawing.Point(675, 400);
+            this.squNine.Name = "squNine";
+            this.squNine.Size = new System.Drawing.Size(75, 23);
+            this.squNine.TabIndex = 57;
+            this.squNine.Text = "9";
+            this.squNine.UseVisualStyleBackColor = true;
+            this.squNine.Click += new System.EventHandler(this.squNine_Click);
+            // 
+            // squEight
+            // 
+            this.squEight.Location = new System.Drawing.Point(594, 400);
+            this.squEight.Name = "squEight";
+            this.squEight.Size = new System.Drawing.Size(75, 23);
+            this.squEight.TabIndex = 56;
+            this.squEight.Text = "8";
+            this.squEight.UseVisualStyleBackColor = true;
+            this.squEight.Click += new System.EventHandler(this.squEight_Click);
+            // 
+            // squSeven
+            // 
+            this.squSeven.Location = new System.Drawing.Point(513, 400);
+            this.squSeven.Name = "squSeven";
+            this.squSeven.Size = new System.Drawing.Size(75, 23);
+            this.squSeven.TabIndex = 55;
+            this.squSeven.Text = "7";
+            this.squSeven.UseVisualStyleBackColor = true;
+            this.squSeven.Click += new System.EventHandler(this.squSeven_Click);
+            // 
+            // squSix
+            // 
+            this.squSix.Location = new System.Drawing.Point(675, 371);
+            this.squSix.Name = "squSix";
+            this.squSix.Size = new System.Drawing.Size(75, 23);
+            this.squSix.TabIndex = 54;
+            this.squSix.Text = "6";
+            this.squSix.UseVisualStyleBackColor = true;
+            this.squSix.Click += new System.EventHandler(this.squSix_Click);
+            // 
+            // squFive
+            // 
+            this.squFive.Location = new System.Drawing.Point(594, 371);
+            this.squFive.Name = "squFive";
+            this.squFive.Size = new System.Drawing.Size(75, 23);
+            this.squFive.TabIndex = 53;
+            this.squFive.Text = "5";
+            this.squFive.UseVisualStyleBackColor = true;
+            this.squFive.Click += new System.EventHandler(this.squFive_Click);
+            // 
+            // squFour
+            // 
+            this.squFour.Location = new System.Drawing.Point(513, 371);
+            this.squFour.Name = "squFour";
+            this.squFour.Size = new System.Drawing.Size(75, 23);
+            this.squFour.TabIndex = 52;
+            this.squFour.Text = "4";
+            this.squFour.UseVisualStyleBackColor = true;
+            this.squFour.Click += new System.EventHandler(this.squFour_Click);
+            // 
+            // squThree
+            // 
+            this.squThree.Location = new System.Drawing.Point(675, 342);
+            this.squThree.Name = "squThree";
+            this.squThree.Size = new System.Drawing.Size(75, 23);
+            this.squThree.TabIndex = 51;
+            this.squThree.Text = "3";
+            this.squThree.UseVisualStyleBackColor = true;
+            this.squThree.Click += new System.EventHandler(this.squThree_Click);
+            // 
+            // squTwo
+            // 
+            this.squTwo.Location = new System.Drawing.Point(594, 342);
+            this.squTwo.Name = "squTwo";
+            this.squTwo.Size = new System.Drawing.Size(75, 23);
+            this.squTwo.TabIndex = 50;
+            this.squTwo.Text = "2";
+            this.squTwo.UseVisualStyleBackColor = true;
+            this.squTwo.Click += new System.EventHandler(this.squTwo_Click);
+            // 
+            // squOne
+            // 
+            this.squOne.Location = new System.Drawing.Point(513, 342);
+            this.squOne.Name = "squOne";
+            this.squOne.Size = new System.Drawing.Size(75, 23);
+            this.squOne.TabIndex = 49;
+            this.squOne.Text = "1";
+            this.squOne.UseVisualStyleBackColor = true;
+            this.squOne.Click += new System.EventHandler(this.squOne_Click);
+            // 
+            // txtSquawk
+            // 
+            this.txtSquawk.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.txtSquawk.Location = new System.Drawing.Point(560, 234);
+            this.txtSquawk.MaxLength = 5;
+            this.txtSquawk.Name = "txtSquawk";
+            this.txtSquawk.ReadOnly = true;
+            this.txtSquawk.Size = new System.Drawing.Size(136, 34);
+            this.txtSquawk.TabIndex = 46;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.SystemColors.Window;
+            this.label6.Location = new System.Drawing.Point(562, 187);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 37);
+            this.label6.TabIndex = 64;
+            this.label6.Text = "Squawk:";
+            // 
             // ComPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(372, 691);
+            this.ClientSize = new System.Drawing.Size(871, 691);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtSquawkIn);
+            this.Controls.Add(this.squClear);
+            this.Controls.Add(this.squDel);
+            this.Controls.Add(this.squOk);
+            this.Controls.Add(this.squZero);
+            this.Controls.Add(this.squNine);
+            this.Controls.Add(this.squEight);
+            this.Controls.Add(this.squSeven);
+            this.Controls.Add(this.squSix);
+            this.Controls.Add(this.squFive);
+            this.Controls.Add(this.squFour);
+            this.Controls.Add(this.squThree);
+            this.Controls.Add(this.squTwo);
+            this.Controls.Add(this.squOne);
+            this.Controls.Add(this.txtSquawk);
             this.Controls.Add(this.navInputFreq);
             this.Controls.Add(this.navClear);
             this.Controls.Add(this.navDel);
@@ -631,6 +835,23 @@
         private System.Windows.Forms.Button navThree;
         private System.Windows.Forms.Button navTwo;
         private System.Windows.Forms.Button navOne;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtSquawkIn;
+        private System.Windows.Forms.Button squClear;
+        private System.Windows.Forms.Button squDel;
+        private System.Windows.Forms.Button squOk;
+        private System.Windows.Forms.Button squZero;
+        private System.Windows.Forms.Button squNine;
+        private System.Windows.Forms.Button squEight;
+        private System.Windows.Forms.Button squSeven;
+        private System.Windows.Forms.Button squSix;
+        private System.Windows.Forms.Button squFive;
+        private System.Windows.Forms.Button squFour;
+        private System.Windows.Forms.Button squThree;
+        private System.Windows.Forms.Button squTwo;
+        private System.Windows.Forms.Button squOne;
+        private System.Windows.Forms.TextBox txtSquawk;
+        private System.Windows.Forms.Label label6;
     }
 }
 

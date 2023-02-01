@@ -225,5 +225,78 @@ namespace RadioPanel
                 navStbyFreq.Text = radioManager.Nav1StandbyFrequency.ToString();
             }
         }
+
+        private void squOne_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "1" : "";
+        }
+
+        private void squTwo_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "2" : "";
+        }
+
+        private void squThree_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "3" : "";
+        }
+
+        private void squFour_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "4" : "";
+        }
+
+        private void squFive_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "5" : "";
+        }
+
+        private void squSix_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "6" : "";
+        }
+
+        private void squSeven_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "7" : "";
+        }
+
+        private void squEight_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "8" : "";
+        }
+
+        private void squNine_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "9" : "";
+        }
+
+        private void squZero_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Text += txtSquawkIn.Text.Length != 4 ? "0" : "";
+        }
+
+        private void squDel_Click(object sender, EventArgs e)
+        {
+            var startSqua = txtSquawkIn.Text;
+            txtSquawkIn.Text = string.Empty;
+            for (int i = 0; i < txtSquawkIn.Text.Length - 1; i++)
+            {
+                txtSquawkIn.Text += startSqua[i].ToString();
+            }
+        }
+
+        private void squOk_Click(object sender, EventArgs e)
+        {
+            txtSquawk.Text = txtSquawkIn.Text;
+            txtSquawkIn.Clear();
+            radioManager.SetTransponderCode(UInt32.Parse(txtSquawkIn.Text));
+            radioManager.Update();
+        }
+
+        private void squClear_Click(object sender, EventArgs e)
+        {
+            txtSquawkIn.Clear();
+        }
     }
 }
