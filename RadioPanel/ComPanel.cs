@@ -27,10 +27,20 @@ namespace RadioPanel
                 fsConnect.Connect("RadioManagerTest", 0);
                 radioManager = new RadioManager(fsConnect);
                 radioManager.Update();
+
+
+                activeFreq.Text = radioManager.Com1ActiveFrequency.ToString();
+                stbyFreq.Text = radioManager.Com1StandbyFrequency.ToString();
+
+                navActivceFreq.Text = radioManager.Nav1ActiveFrequency.ToString();
+                navStbyFreq.Text = radioManager.Nav1StandbyFrequency.ToString();
+
+                txtSquawk.Text = radioManager.TransponderCode.ToString();
             } catch (Exception e)
             {
                 infoLabel.Text = "Could not connect to simulator.";
                 butRecon.Visible = true;
+                btnGetAllValues.Visible = true;
             }
         }
 
@@ -280,7 +290,7 @@ namespace RadioPanel
         {
             var startSqua = txtSquawkIn.Text;
             txtSquawkIn.Text = string.Empty;
-            for (int i = 0; i < txtSquawkIn.Text.Length - 1; i++)
+            for (int i = 0; i < startSqua.Length - 1; i++)
             {
                 txtSquawkIn.Text += startSqua[i].ToString();
             }
@@ -290,13 +300,97 @@ namespace RadioPanel
         {
             txtSquawk.Text = txtSquawkIn.Text;
             txtSquawkIn.Clear();
-            radioManager.SetTransponderCode(UInt32.Parse(txtSquawkIn.Text));
+            radioManager.SetTransponderCode(UInt32.Parse(txtSquawk.Text));
             radioManager.Update();
         }
 
         private void squClear_Click(object sender, EventArgs e)
         {
             txtSquawkIn.Clear();
+        }
+
+        private void nav2One_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "1" : ".1";
+        }
+
+        private void nav2Two_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "2" : ".2";
+        }
+
+        private void nav2Three_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "3" : ".3";
+        }
+
+        private void nav2Four_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "4" : ".4";
+        }
+
+        private void nav2Five_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "5" : ".5";
+        }
+
+        private void nav2Six_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "6" : ".6";
+        }
+
+        private void nav2Seven_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "7" : ".7";
+        }
+
+        private void nav2Eight_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "8" : ".8";
+        }
+
+        private void nav2Nine_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "9" : ".9";
+        }
+
+        private void nav2Zero_Click(object sender, EventArgs e)
+        {
+            nav2Input.Text += nav2Input.Text.Length != 3 ? "0" : ".0";
+        }
+
+        private void nav2Del_Click(object sender, EventArgs e)
+        {
+            var startNav = nav2Input.Text;
+            nav2Input.Text = string.Empty;
+            for (int i = 0; i < startNav.Length - 1; i++)
+            {
+                nav2Input.Text += startNav[i].ToString();
+            }
+        }
+
+        private void nav2Ok_Click(object sender, EventArgs e)
+        {
+            nav2Stby.Text = nav2Input.Text;
+            nav2Input.Clear();
+            radioManager.SetNav2StandbyFrequency(UInt32.Parse(nav2Stby.Text));
+            radioManager.Update();
+        }
+
+        private void nav2Clear_Click(object sender, EventArgs e)
+        {
+            nav2Input.Clear();
+        }
+
+        private void btnGetAllValues_Click(object sender, EventArgs e)
+        {
+            activeFreq.Text = radioManager.Com1ActiveFrequency.ToString();
+            stbyFreq.Text = radioManager.Com1StandbyFrequency.ToString();
+
+            navActivceFreq.Text = radioManager.Nav1ActiveFrequency.ToString();
+            navStbyFreq.Text = radioManager.Nav1StandbyFrequency.ToString();
+
+            txtSquawk.Text = radioManager.TransponderCode.ToString();
         }
     }
 }

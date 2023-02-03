@@ -89,6 +89,28 @@
             this.squOne = new System.Windows.Forms.Button();
             this.txtSquawk = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.nav2Input = new System.Windows.Forms.TextBox();
+            this.nav2Clear = new System.Windows.Forms.Button();
+            this.nav2Del = new System.Windows.Forms.Button();
+            this.nav2Ok = new System.Windows.Forms.Button();
+            this.nav2Zero = new System.Windows.Forms.Button();
+            this.nav2Nine = new System.Windows.Forms.Button();
+            this.nav2Eight = new System.Windows.Forms.Button();
+            this.nav2Seven = new System.Windows.Forms.Button();
+            this.nav2Six = new System.Windows.Forms.Button();
+            this.nav2Five = new System.Windows.Forms.Button();
+            this.nav2Four = new System.Windows.Forms.Button();
+            this.nav2Three = new System.Windows.Forms.Button();
+            this.nav2Two = new System.Windows.Forms.Button();
+            this.nav2One = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.nav2Swap = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.nav2Active = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.nav2Stby = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnGetAllValues = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // stbyFreq
@@ -308,7 +330,7 @@
             // 
             // butRecon
             // 
-            this.butRecon.Location = new System.Drawing.Point(297, 668);
+            this.butRecon.Location = new System.Drawing.Point(729, 668);
             this.butRecon.Name = "butRecon";
             this.butRecon.Size = new System.Drawing.Size(75, 23);
             this.butRecon.TabIndex = 21;
@@ -549,7 +571,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(599, 271);
+            this.label7.Location = new System.Drawing.Point(556, 134);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 28);
             this.label7.TabIndex = 63;
@@ -558,14 +580,14 @@
             // txtSquawkIn
             // 
             this.txtSquawkIn.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.txtSquawkIn.Location = new System.Drawing.Point(541, 302);
+            this.txtSquawkIn.Location = new System.Drawing.Point(498, 165);
             this.txtSquawkIn.Name = "txtSquawkIn";
             this.txtSquawkIn.Size = new System.Drawing.Size(176, 34);
             this.txtSquawkIn.TabIndex = 62;
             // 
             // squClear
             // 
-            this.squClear.Location = new System.Drawing.Point(594, 458);
+            this.squClear.Location = new System.Drawing.Point(551, 321);
             this.squClear.Name = "squClear";
             this.squClear.Size = new System.Drawing.Size(75, 23);
             this.squClear.TabIndex = 61;
@@ -575,7 +597,7 @@
             // 
             // squDel
             // 
-            this.squDel.Location = new System.Drawing.Point(513, 429);
+            this.squDel.Location = new System.Drawing.Point(470, 292);
             this.squDel.Name = "squDel";
             this.squDel.Size = new System.Drawing.Size(75, 23);
             this.squDel.TabIndex = 60;
@@ -585,7 +607,7 @@
             // 
             // squOk
             // 
-            this.squOk.Location = new System.Drawing.Point(675, 429);
+            this.squOk.Location = new System.Drawing.Point(632, 292);
             this.squOk.Name = "squOk";
             this.squOk.Size = new System.Drawing.Size(75, 23);
             this.squOk.TabIndex = 59;
@@ -595,7 +617,7 @@
             // 
             // squZero
             // 
-            this.squZero.Location = new System.Drawing.Point(594, 429);
+            this.squZero.Location = new System.Drawing.Point(551, 292);
             this.squZero.Name = "squZero";
             this.squZero.Size = new System.Drawing.Size(75, 23);
             this.squZero.TabIndex = 58;
@@ -605,7 +627,7 @@
             // 
             // squNine
             // 
-            this.squNine.Location = new System.Drawing.Point(675, 400);
+            this.squNine.Location = new System.Drawing.Point(632, 263);
             this.squNine.Name = "squNine";
             this.squNine.Size = new System.Drawing.Size(75, 23);
             this.squNine.TabIndex = 57;
@@ -615,7 +637,7 @@
             // 
             // squEight
             // 
-            this.squEight.Location = new System.Drawing.Point(594, 400);
+            this.squEight.Location = new System.Drawing.Point(551, 263);
             this.squEight.Name = "squEight";
             this.squEight.Size = new System.Drawing.Size(75, 23);
             this.squEight.TabIndex = 56;
@@ -625,7 +647,7 @@
             // 
             // squSeven
             // 
-            this.squSeven.Location = new System.Drawing.Point(513, 400);
+            this.squSeven.Location = new System.Drawing.Point(470, 263);
             this.squSeven.Name = "squSeven";
             this.squSeven.Size = new System.Drawing.Size(75, 23);
             this.squSeven.TabIndex = 55;
@@ -635,7 +657,7 @@
             // 
             // squSix
             // 
-            this.squSix.Location = new System.Drawing.Point(675, 371);
+            this.squSix.Location = new System.Drawing.Point(632, 234);
             this.squSix.Name = "squSix";
             this.squSix.Size = new System.Drawing.Size(75, 23);
             this.squSix.TabIndex = 54;
@@ -645,7 +667,7 @@
             // 
             // squFive
             // 
-            this.squFive.Location = new System.Drawing.Point(594, 371);
+            this.squFive.Location = new System.Drawing.Point(551, 234);
             this.squFive.Name = "squFive";
             this.squFive.Size = new System.Drawing.Size(75, 23);
             this.squFive.TabIndex = 53;
@@ -655,7 +677,7 @@
             // 
             // squFour
             // 
-            this.squFour.Location = new System.Drawing.Point(513, 371);
+            this.squFour.Location = new System.Drawing.Point(470, 234);
             this.squFour.Name = "squFour";
             this.squFour.Size = new System.Drawing.Size(75, 23);
             this.squFour.TabIndex = 52;
@@ -665,7 +687,7 @@
             // 
             // squThree
             // 
-            this.squThree.Location = new System.Drawing.Point(675, 342);
+            this.squThree.Location = new System.Drawing.Point(632, 205);
             this.squThree.Name = "squThree";
             this.squThree.Size = new System.Drawing.Size(75, 23);
             this.squThree.TabIndex = 51;
@@ -675,7 +697,7 @@
             // 
             // squTwo
             // 
-            this.squTwo.Location = new System.Drawing.Point(594, 342);
+            this.squTwo.Location = new System.Drawing.Point(551, 205);
             this.squTwo.Name = "squTwo";
             this.squTwo.Size = new System.Drawing.Size(75, 23);
             this.squTwo.TabIndex = 50;
@@ -685,7 +707,7 @@
             // 
             // squOne
             // 
-            this.squOne.Location = new System.Drawing.Point(513, 342);
+            this.squOne.Location = new System.Drawing.Point(470, 205);
             this.squOne.Name = "squOne";
             this.squOne.Size = new System.Drawing.Size(75, 23);
             this.squOne.TabIndex = 49;
@@ -696,7 +718,7 @@
             // txtSquawk
             // 
             this.txtSquawk.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.txtSquawk.Location = new System.Drawing.Point(560, 234);
+            this.txtSquawk.Location = new System.Drawing.Point(517, 97);
             this.txtSquawk.MaxLength = 5;
             this.txtSquawk.Name = "txtSquawk";
             this.txtSquawk.ReadOnly = true;
@@ -708,18 +730,266 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(562, 187);
+            this.label6.Location = new System.Drawing.Point(519, 50);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 37);
             this.label6.TabIndex = 64;
             this.label6.Text = "Squawk:";
+            // 
+            // nav2Input
+            // 
+            this.nav2Input.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.nav2Input.Location = new System.Drawing.Point(498, 483);
+            this.nav2Input.Name = "nav2Input";
+            this.nav2Input.Size = new System.Drawing.Size(176, 34);
+            this.nav2Input.TabIndex = 85;
+            // 
+            // nav2Clear
+            // 
+            this.nav2Clear.Location = new System.Drawing.Point(551, 639);
+            this.nav2Clear.Name = "nav2Clear";
+            this.nav2Clear.Size = new System.Drawing.Size(75, 23);
+            this.nav2Clear.TabIndex = 84;
+            this.nav2Clear.Text = "Clear";
+            this.nav2Clear.UseVisualStyleBackColor = true;
+            this.nav2Clear.Click += new System.EventHandler(this.nav2Clear_Click);
+            // 
+            // nav2Del
+            // 
+            this.nav2Del.Location = new System.Drawing.Point(470, 610);
+            this.nav2Del.Name = "nav2Del";
+            this.nav2Del.Size = new System.Drawing.Size(75, 23);
+            this.nav2Del.TabIndex = 83;
+            this.nav2Del.Text = "DEL";
+            this.nav2Del.UseVisualStyleBackColor = true;
+            this.nav2Del.Click += new System.EventHandler(this.nav2Del_Click);
+            // 
+            // nav2Ok
+            // 
+            this.nav2Ok.Location = new System.Drawing.Point(632, 610);
+            this.nav2Ok.Name = "nav2Ok";
+            this.nav2Ok.Size = new System.Drawing.Size(75, 23);
+            this.nav2Ok.TabIndex = 82;
+            this.nav2Ok.Text = "OK ✔";
+            this.nav2Ok.UseVisualStyleBackColor = true;
+            this.nav2Ok.Click += new System.EventHandler(this.nav2Ok_Click);
+            // 
+            // nav2Zero
+            // 
+            this.nav2Zero.Location = new System.Drawing.Point(551, 610);
+            this.nav2Zero.Name = "nav2Zero";
+            this.nav2Zero.Size = new System.Drawing.Size(75, 23);
+            this.nav2Zero.TabIndex = 81;
+            this.nav2Zero.Text = "0";
+            this.nav2Zero.UseVisualStyleBackColor = true;
+            this.nav2Zero.Click += new System.EventHandler(this.nav2Zero_Click);
+            // 
+            // nav2Nine
+            // 
+            this.nav2Nine.Location = new System.Drawing.Point(632, 581);
+            this.nav2Nine.Name = "nav2Nine";
+            this.nav2Nine.Size = new System.Drawing.Size(75, 23);
+            this.nav2Nine.TabIndex = 80;
+            this.nav2Nine.Text = "9";
+            this.nav2Nine.UseVisualStyleBackColor = true;
+            this.nav2Nine.Click += new System.EventHandler(this.nav2Nine_Click);
+            // 
+            // nav2Eight
+            // 
+            this.nav2Eight.Location = new System.Drawing.Point(551, 581);
+            this.nav2Eight.Name = "nav2Eight";
+            this.nav2Eight.Size = new System.Drawing.Size(75, 23);
+            this.nav2Eight.TabIndex = 79;
+            this.nav2Eight.Text = "8";
+            this.nav2Eight.UseVisualStyleBackColor = true;
+            this.nav2Eight.Click += new System.EventHandler(this.nav2Eight_Click);
+            // 
+            // nav2Seven
+            // 
+            this.nav2Seven.Location = new System.Drawing.Point(470, 581);
+            this.nav2Seven.Name = "nav2Seven";
+            this.nav2Seven.Size = new System.Drawing.Size(75, 23);
+            this.nav2Seven.TabIndex = 78;
+            this.nav2Seven.Text = "7";
+            this.nav2Seven.UseVisualStyleBackColor = true;
+            this.nav2Seven.Click += new System.EventHandler(this.nav2Seven_Click);
+            // 
+            // nav2Six
+            // 
+            this.nav2Six.Location = new System.Drawing.Point(632, 552);
+            this.nav2Six.Name = "nav2Six";
+            this.nav2Six.Size = new System.Drawing.Size(75, 23);
+            this.nav2Six.TabIndex = 77;
+            this.nav2Six.Text = "6";
+            this.nav2Six.UseVisualStyleBackColor = true;
+            this.nav2Six.Click += new System.EventHandler(this.nav2Six_Click);
+            // 
+            // nav2Five
+            // 
+            this.nav2Five.Location = new System.Drawing.Point(551, 552);
+            this.nav2Five.Name = "nav2Five";
+            this.nav2Five.Size = new System.Drawing.Size(75, 23);
+            this.nav2Five.TabIndex = 76;
+            this.nav2Five.Text = "5";
+            this.nav2Five.UseVisualStyleBackColor = true;
+            this.nav2Five.Click += new System.EventHandler(this.nav2Five_Click);
+            // 
+            // nav2Four
+            // 
+            this.nav2Four.Location = new System.Drawing.Point(470, 552);
+            this.nav2Four.Name = "nav2Four";
+            this.nav2Four.Size = new System.Drawing.Size(75, 23);
+            this.nav2Four.TabIndex = 75;
+            this.nav2Four.Text = "4";
+            this.nav2Four.UseVisualStyleBackColor = true;
+            this.nav2Four.Click += new System.EventHandler(this.nav2Four_Click);
+            // 
+            // nav2Three
+            // 
+            this.nav2Three.Location = new System.Drawing.Point(632, 523);
+            this.nav2Three.Name = "nav2Three";
+            this.nav2Three.Size = new System.Drawing.Size(75, 23);
+            this.nav2Three.TabIndex = 74;
+            this.nav2Three.Text = "3";
+            this.nav2Three.UseVisualStyleBackColor = true;
+            this.nav2Three.Click += new System.EventHandler(this.nav2Three_Click);
+            // 
+            // nav2Two
+            // 
+            this.nav2Two.Location = new System.Drawing.Point(551, 523);
+            this.nav2Two.Name = "nav2Two";
+            this.nav2Two.Size = new System.Drawing.Size(75, 23);
+            this.nav2Two.TabIndex = 73;
+            this.nav2Two.Text = "2";
+            this.nav2Two.UseVisualStyleBackColor = true;
+            this.nav2Two.Click += new System.EventHandler(this.nav2Two_Click);
+            // 
+            // nav2One
+            // 
+            this.nav2One.Location = new System.Drawing.Point(470, 523);
+            this.nav2One.Name = "nav2One";
+            this.nav2One.Size = new System.Drawing.Size(75, 23);
+            this.nav2One.TabIndex = 72;
+            this.nav2One.Text = "1";
+            this.nav2One.UseVisualStyleBackColor = true;
+            this.nav2One.Click += new System.EventHandler(this.nav2One_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.SystemColors.Window;
+            this.label8.Location = new System.Drawing.Point(560, 452);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 28);
+            this.label8.TabIndex = 71;
+            this.label8.Text = "Input:";
+            // 
+            // nav2Swap
+            // 
+            this.nav2Swap.ForeColor = System.Drawing.Color.Black;
+            this.nav2Swap.Location = new System.Drawing.Point(559, 418);
+            this.nav2Swap.Name = "nav2Swap";
+            this.nav2Swap.Size = new System.Drawing.Size(67, 34);
+            this.nav2Swap.TabIndex = 70;
+            this.nav2Swap.Text = "↔";
+            this.nav2Swap.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Black;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.SystemColors.Window;
+            this.label9.Location = new System.Drawing.Point(417, 387);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 28);
+            this.label9.TabIndex = 69;
+            this.label9.Text = "Active:";
+            // 
+            // nav2Active
+            // 
+            this.nav2Active.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.nav2Active.Location = new System.Drawing.Point(417, 418);
+            this.nav2Active.MaxLength = 5;
+            this.nav2Active.Name = "nav2Active";
+            this.nav2Active.ReadOnly = true;
+            this.nav2Active.Size = new System.Drawing.Size(136, 34);
+            this.nav2Active.TabIndex = 68;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Black;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.SystemColors.Window;
+            this.label10.Location = new System.Drawing.Point(632, 387);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 28);
+            this.label10.TabIndex = 67;
+            this.label10.Text = "STBY:";
+            // 
+            // nav2Stby
+            // 
+            this.nav2Stby.BackColor = System.Drawing.SystemColors.Window;
+            this.nav2Stby.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.nav2Stby.Location = new System.Drawing.Point(632, 418);
+            this.nav2Stby.MaxLength = 5;
+            this.nav2Stby.Name = "nav2Stby";
+            this.nav2Stby.ReadOnly = true;
+            this.nav2Stby.Size = new System.Drawing.Size(135, 34);
+            this.nav2Stby.TabIndex = 66;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.SystemColors.Window;
+            this.label11.Location = new System.Drawing.Point(417, 341);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(97, 37);
+            this.label11.TabIndex = 65;
+            this.label11.Text = "NAV2:";
+            // 
+            // btnGetAllValues
+            // 
+            this.btnGetAllValues.Location = new System.Drawing.Point(659, 9);
+            this.btnGetAllValues.Name = "btnGetAllValues";
+            this.btnGetAllValues.Size = new System.Drawing.Size(136, 49);
+            this.btnGetAllValues.TabIndex = 86;
+            this.btnGetAllValues.Text = "Get All Values";
+            this.btnGetAllValues.UseVisualStyleBackColor = true;
+            this.btnGetAllValues.Visible = false;
+            this.btnGetAllValues.Click += new System.EventHandler(this.btnGetAllValues_Click);
             // 
             // ComPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(871, 691);
+            this.ClientSize = new System.Drawing.Size(807, 691);
+            this.Controls.Add(this.btnGetAllValues);
+            this.Controls.Add(this.nav2Input);
+            this.Controls.Add(this.nav2Clear);
+            this.Controls.Add(this.nav2Del);
+            this.Controls.Add(this.nav2Ok);
+            this.Controls.Add(this.nav2Zero);
+            this.Controls.Add(this.nav2Nine);
+            this.Controls.Add(this.nav2Eight);
+            this.Controls.Add(this.nav2Seven);
+            this.Controls.Add(this.nav2Six);
+            this.Controls.Add(this.nav2Five);
+            this.Controls.Add(this.nav2Four);
+            this.Controls.Add(this.nav2Three);
+            this.Controls.Add(this.nav2Two);
+            this.Controls.Add(this.nav2One);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.nav2Swap);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.nav2Active);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.nav2Stby);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtSquawkIn);
@@ -852,6 +1122,28 @@
         private System.Windows.Forms.Button squOne;
         private System.Windows.Forms.TextBox txtSquawk;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox nav2Input;
+        private System.Windows.Forms.Button nav2Clear;
+        private System.Windows.Forms.Button nav2Del;
+        private System.Windows.Forms.Button nav2Ok;
+        private System.Windows.Forms.Button nav2Zero;
+        private System.Windows.Forms.Button nav2Nine;
+        private System.Windows.Forms.Button nav2Eight;
+        private System.Windows.Forms.Button nav2Seven;
+        private System.Windows.Forms.Button nav2Six;
+        private System.Windows.Forms.Button nav2Five;
+        private System.Windows.Forms.Button nav2Four;
+        private System.Windows.Forms.Button nav2Three;
+        private System.Windows.Forms.Button nav2Two;
+        private System.Windows.Forms.Button nav2One;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button nav2Swap;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox nav2Active;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox nav2Stby;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnGetAllValues;
     }
 }
 
