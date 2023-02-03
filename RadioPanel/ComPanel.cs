@@ -35,6 +35,9 @@ namespace RadioPanel
                 navActivceFreq.Text = radioManager.Nav1ActiveFrequency.ToString();
                 navStbyFreq.Text = radioManager.Nav1StandbyFrequency.ToString();
 
+                nav2Active.Text = radioManager.Nav2ActiveFrequency.ToString();
+                nav2Stby.Text = radioManager.Nav2StandbyFrequency.ToString();
+
                 txtSquawk.Text = radioManager.TransponderCode.ToString();
             } catch (Exception e)
             {
@@ -373,7 +376,7 @@ namespace RadioPanel
         {
             nav2Stby.Text = nav2Input.Text;
             nav2Input.Clear();
-            radioManager.SetNav2StandbyFrequency(UInt32.Parse(nav2Stby.Text));
+            radioManager.SetNav2StandbyFrequency(Double.Parse(nav2Stby.Text));
             radioManager.Update();
         }
 
@@ -390,7 +393,25 @@ namespace RadioPanel
             navActivceFreq.Text = radioManager.Nav1ActiveFrequency.ToString();
             navStbyFreq.Text = radioManager.Nav1StandbyFrequency.ToString();
 
+            nav2Active.Text = radioManager.Nav2ActiveFrequency.ToString();
+            nav2Stby.Text = radioManager.Nav2StandbyFrequency.ToString();
+
             txtSquawk.Text = radioManager.TransponderCode.ToString();
+        }
+
+        private void nav2Swap_Click(object sender, EventArgs e)
+        {
+            var activeText = nav2Active.Text;
+            nav2Active.Text = nav2Stby.Text;
+            nav2Stby.Text = activeText;
+
+            radioManager.Nav2Swap();
+            radioManager.Update();
+
+            if (nav2Stby.Text == string.Empty)
+            {
+                nav2Stby.Text = radioManager.Nav2StandbyFrequency.ToString();
+            }
         }
     }
 }

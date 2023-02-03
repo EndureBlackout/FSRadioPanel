@@ -894,6 +894,7 @@
             this.nav2Swap.TabIndex = 70;
             this.nav2Swap.Text = "↔";
             this.nav2Swap.UseVisualStyleBackColor = true;
+            this.nav2Swap.Click += new System.EventHandler(this.nav2Swap_Click);
             // 
             // label9
             // 
